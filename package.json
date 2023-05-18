@@ -35,9 +35,6 @@
     "Miro Albrecht",
     "Philippe Krüttli"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.com/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/oblique-bit/oblique.git"
