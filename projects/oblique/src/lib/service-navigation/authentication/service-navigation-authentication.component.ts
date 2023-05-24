@@ -4,6 +4,7 @@ import {Component, Input, ViewEncapsulation} from '@angular/core';
 	selector: 'ob-service-navigation-authentication',
 	templateUrl: './service-navigation-authentication.component.html',
 	encapsulation: ViewEncapsulation.None,
+	styleUrls: ['./service-navigation-authentication.component.scss'],
 	host: {class: 'ob-service-navigation-authentication'}
 })
 export class ObServiceNavigationAuthenticationComponent {
