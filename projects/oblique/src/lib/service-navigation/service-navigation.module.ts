@@ -7,6 +7,7 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {TranslateModule} from '@ngx-translate/core';
 import {obliqueProviders} from '../utilities';
 import {ObButtonModule} from '../button/button.module';
+import {ObFormFieldModule} from '../form-field/form-field.module';
 import {ObExternalLinkModule} from '../external-link/external-link.module';
 import {ObPopoverModule} from '../popover/popover.module';
 import {ObTranslateParamsModule} from '../translate-params/translate-params.module';
@@ -23,6 +24,7 @@ import {ObServiceNavigationApplicationAltPipe} from './applications/service-navi
 import {ObServiceNavigationLanguagesComponent} from './languages/service-navigation-languages.component';
 import {ObContactToLinksPipe} from './info/contact-to-links.pipe';
 import {ObServiceNavigationComponent} from './service-navigation.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
 	providers: [...obliqueProviders()],
@@ -31,9 +33,11 @@ import {ObServiceNavigationComponent} from './service-navigation.component';
 		MatBadgeModule,
 		MatButtonModule,
 		MatIconModule,
+		MatSelectModule,
 		MatTooltipModule,
 		ObButtonModule,
 		ObExternalLinkModule,
+		ObFormFieldModule,
 		ObPopoverModule,
 		ObTranslateParamsModule,
 		TranslateModule

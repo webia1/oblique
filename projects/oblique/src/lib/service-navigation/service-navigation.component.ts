@@ -3,6 +3,7 @@ import {Observable} from 'rxjs';
 import {ObServiceNavigationService} from './service-navigation.service';
 import {ObEPamsEnvironment, ObIServiceNavigationContact, ObIServiceNavigationLink, ObLoginState} from './service-navigation.model';
 import {ObServiceNavigationApplicationsService} from './applications/service-navigation-applications.service';
+import {ObLanguageSelectorType} from '../master-layout/master-layout.model';
 
 @Component({
 	selector: 'ob-service-navigation',
@@ -16,6 +17,7 @@ export class ObServiceNavigationComponent implements OnInit, OnChanges {
 	@Input() profileLinks: ObIServiceNavigationLink[] = [];
 	@Input() infoLinks: ObIServiceNavigationLink[] = [];
 	@Input() infoContact: ObIServiceNavigationContact;
+	@Input() languageSelectorStyle: ObLanguageSelectorType = 'dropdown';
 	@Input() maxLastUsedApplications = 3;
 	@Input() maxFavoriteApplications = 3;
 	@Input() environment: ObEPamsEnvironment;
