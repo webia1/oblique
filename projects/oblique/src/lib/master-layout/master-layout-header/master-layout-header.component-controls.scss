@@ -84,8 +84,8 @@
 		justify-content: flex-end;
 		flex-wrap: wrap;
 		white-space: nowrap;
-		margin-right: variables.$ob-spacing-default;
-		margin-left: variables.$ob-spacing-default;
+		padding-right: variables.$ob-spacing-default;
+		padding-left: variables.$ob-spacing-default;
 
 		.ob-service-navigation-list {
 			flex-wrap: wrap;
