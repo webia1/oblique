@@ -1,19 +1,20 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
-import {AlertCodeExamplesComponent} from './alert-code-examples.component';
+import {CardCodeExamplesComponent} from './card-code-examples.component';
+import {RouterTestingModule} from '@angular/router/testing';
 import {TranslateService} from '@ngx-translate/core';
 import {ObMockTranslateService} from '@oblique/oblique';
 
-describe(`${AlertCodeExamplesComponent.name}`, () => {
-	let component: AlertCodeExamplesComponent;
-	let fixture: ComponentFixture<AlertCodeExamplesComponent>;
+describe('CardCodeExamplesComponent', () => {
+	let component: CardCodeExamplesComponent;
+	let fixture: ComponentFixture<CardCodeExamplesComponent>;
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			imports: [AlertCodeExamplesComponent],
+			imports: [CardCodeExamplesComponent, RouterTestingModule],
 			providers: [{provide: TranslateService, useClass: ObMockTranslateService}]
 		}).compileComponents();
 
-		fixture = TestBed.createComponent(AlertCodeExamplesComponent);
+		fixture = TestBed.createComponent(CardCodeExamplesComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});
