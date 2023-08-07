@@ -86,6 +86,6 @@ export class ObMasterLayoutConfig {
 	footer: ObIMasterLayoutFooter = {
 		isSticky: false,
 		isCustom: false,
-		hasLogoOnScroll: true
+		hasLogoOnScroll: false
 	};
 }
